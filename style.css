@@ -1,0 +1,410 @@
+body
+{
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  position: absolute;
+  top: 60px;
+  left:1%;
+  z-index: 10000000;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+ color: white;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(0, 0, 0);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -0px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition:  0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  background-color: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  opacity: 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background:  rgb(255, 255, 255);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #4278ee;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.main{
+    width: 80px;
+    height: 900px;
+    background-color: #232323;
+    z-index: 10000;
+}
+ .man{
+     width: 91%;
+     height: 845px;
+     position: absolute;
+     left: 7%;
+ }
+ .redf{
+     width: 30px;
+     height: 30px;
+     position: relative;
+     left: 43%;
+     top: 21px;
+     z-index: 10100000;
+ }
+ .klon{
+     position: relative;
+     left: 40%;
+     text-align:  center;
+     width: 200px;
+     height: 25px;
+     border-radius: 20px;
+     top: 10px;
+
+ }
+ .nan{
+
+    position: absolute;
+    width: 50px ;
+    height: 50px;
+    left: 91%;
+    top: 10px;
+ }
+ h1{
+     color: #2d6efa;
+     position: relative;
+     left: 15px;
+      top: 10px;
+ }
+ h3{
+position: relative;
+left: 15px;
+ }
+ .tel{
+     position: relative;
+     left: 15%;
+     width: 200px;
+     height: 150px;
+     
+      text-align: left;
+      top: 13%;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px 0 rgb(201, 196, 196);
+ }
+ .tel:hover{
+  box-shadow: 10px 10px 15px 0 rgb(78, 74, 74);
+  transition: 0.2s;
+  color: white;
+  background-color:#d6e1f8 ;
+ }
+ .koz{
+   
+     position: relative;
+     left: 58%;
+     bottom: 90px;
+ }
+ .tel_1{
+    position: relative;
+   left: 35%;
+    width: 200px;
+    height: 150px;
+   bottom: 8%;
+   
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgb(201, 196, 196);
+ }
+ .tel_1:hover{
+  box-shadow: 10px 10px 15px 0 rgb(78, 74, 74);
+  transition: 0.2s;
+  color: white;
+  background-color:#d6e1f8 ;
+
+ }
+ 
+ .korzi{
+     position: relative;
+     bottom: 190px;
+     left: 43%;
+ }
+ .tel_2{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgb(201, 196, 196);
+    position: relative;
+    left: 55%;
+     width: 200px;
+     height: 150px;
+     bottom: 36%;
+ }
+ .tel_2:hover{
+  box-shadow: 10px 10px 15px 0 rgb(78, 74, 74);
+  transition: 0.2s;
+  color: white;
+  background-color:#d6e1f8 ;
+ }
+ .sab{
+    position: relative;
+    bottom: 75px;
+     left: 55%;
+ }
+ .tel_3{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgb(201, 196, 196);
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 75%;
+    bottom: 57%;
+ }
+ .tel_3:hover{
+  box-shadow: 10px 10px 15px 0 rgb(78, 74, 74);
+  transition: 0.2s;
+  color: white;
+  background-color:#d6e1f8 ;
+ }
+  .pul{
+      position: relative;
+      bottom: 49%;
+      left: 60%;
+  }
+  .nov{
+      position: absolute;
+      width: 95px;
+      height:  845px;
+      background-color: #4278ee ;
+  }
+  .hard{
+      position:  absolute;
+      left: 12.5%;
+    top: 44.8%;
+      width: 50%;
+      height: 350px;
+      
+  }
+  .gt{
+      margin-top: 18%;
+  }
+  .br{
+      position: relative;
+      left: 80%;
+      bottom: 8%;
+      border-radius: 5px;
+      background-color:#2d6efa ;
+  }
+  p{
+      border-bottom: 1px solid rgb(204, 194, 194);
+
+  }
+  
+  /* p:hover{
+  
+    height: 40px;
+    background-color: rgb(17, 0, 255);
+    border-radius: 15px;
+  } */
+  span{
+      position: relative;
+      left: 22%;
+  }
+  #ko{
+      position: relative;
+      left: 30%;
+  }
+  .dw{
+      position:  absolute;
+      left: 60%;
+  }
+  .gd{
+    position:  absolute;
+    left: 80%; 
+    padding: 0px 4px ;
+    border-radius: 4px;
+  }
+  .ht{
+      position: relative;
+      left: 70%;
+  }
+  .nuy{
+      position:  relative;
+      width: 300px;
+      height: 450px;
+     box-shadow: 5px 5px 10px 0 rgb(201, 196, 196);
+      bottom: 130%;
+      left:110%;
+  }
+  .nuy:hover{
+    box-shadow: 20px 20px 25px 20px rgb(201, 196, 196);
+    border-radius: 20px;
+  }
+  h4{
+      margin-left: 70px;
+      color: rgb(105, 101, 101);
+  }
+  .fl{
+    position: absolute;
+    top: 23.5%;
+  }
+  
+ .a_1{
+   position: absolute;
+    top: 35%;
+    right: 78%;
+ }
+ .a_2{
+  position: absolute;
+  top:  44%;
+  
+ }
+ .a_3{
+  position: absolute;
+  top: 52%;
+  right: 78%;
+ }
+ .a_4{
+   position: absolute;
+   top: 60%;
+   right: 79.5%;
+ }
+ .a_5{
+  position: absolute;
+  top: 68%;
+  right: 78%;
+}
+.a_6{
+  position: absolute;
+  top: 77%;
+  right: 78%;
+}
+.a_7{
+  position: absolute;
+  top: 84%;
+  right: 77.8%;
+}
+ a{
+   position: relative;
+   left: 18%;
+ }
+ .b_1{
+   position: absolute;
+    top: 15%;
+    left: 12px;
+ }
+ .b_2{
+   position: absolute;
+   top: 22%;
+   left: 5px;
+ }
+ .b_3{
+  position: absolute;
+  top: 30%;
+  left: 12px;
+}
+.b_4{
+  position: absolute;
+  top: 36%;
+  
+}
+.b_5{
+  position: absolute;
+  top: 42%;
+  left: 10px;
+  
+}
+.b_6{
+  position: absolute;
+  top: 47%;
+  left: 9px;
+  
+}
+.b_7{
+  position: absolute;
+  top: 52.5%;
+  left: 9px;
+  
+}
+.b_8{
+  position: absolute;
+  top: 58%;
+  left: 9px;
+  
+}
